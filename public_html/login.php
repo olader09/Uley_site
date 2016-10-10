@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <?php
-if (isset($_COOKIE['grdd']) and isset($_COOKIE['prdd'])) {
+if (isset($_COOKIE['grdd']) and
+    
+    
+    isset($_COOKIE['prdd'])) {
 echo '<meta http-equiv="Refresh" content="0;URL=login2.php">';
 exit();
 }?>
