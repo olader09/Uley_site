@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Регистрация</title>
+	<link rel="stylesheet" href="css/login.css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800" rel="stylesheet" type="text/css" />
+	
+	<!-- Stylesheets -->
+	<link href="css/reset.css" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
+	<link href="css/asyncslider_body.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	
+	<!-- JavaScripts -->
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery.maskedinput.js" type="text/javascript"></script>
+</head>
+<body>
+<header>
+
+					<a href="http://rnd-promo.esy.es/"><div class="logo"></div></a>
+					<div class="description">Время! Простота! Контроль!</div>
+					
+					<div class="contact">
+						
+						<!-- Telephone -->
+						<div class="telephone"> +7 905 45 67 505</div>
+						<!-- END OF: Telephone -->
+						<!-- Order -->
+						<a class="order" href="/login.php">Вход</a> 
+						<!--<a class="social" href="#">f</a>
+						<a class="social" href="#">t</a>-->
+						
+					</div>
+					<div class="clear"></div>
+							<!--<div class="line"></div>-->
+				</header>
+	<div class="background_overlay">
+		<div class="background">
+			<div class="wrapper">
+            <script type="text/javascript">
+jQuery(function($){
+   $("#phone").mask("+7 999 999 99 99",{placeholder:" "});   $("#mail").mask("+7 999 999 99 99",{placeholder:" "});
+});
+			</script>
+<form id="register" name="register" method="POST" action="register.php">
+	<h1>Регистрация</h1><br>
+		<fieldset id="inputs">
+			<input name="phone" id="phone" type="tel" placeholder="+7 (906) 658 - 87 - 65" autofocus required>						<input name="email"  id="email" type="email" placeholder="mail@examle.com"  required>
+			<input name="name" id="username" type="text" placeholder="Ф.И.О."  required>						<div class="new">				<select id="region" name="region" required>				<option>Ворошиловский</option>				<option>Железнодорожный</option>				<option>Кировский</option>				<option>Левинцовский</option>				<option>Ленинский</option>				<option>Октябрьский</option>				<option>Первомайский</option>				<option>Пролетарский</option>				<option>Советский</option>				<option>Суворовский</option>			 </select> 			</div>			
+			<input name="password" id="password" type="password" placeholder="Пароль..." required>
+			<input name="repassword" id="repassword" type="password" placeholder="Повторно пароль..." required>
+			<input id="username" type = "text" name = "kapcha" placeholder="Введите код с картинки"/>
+			<div align=center><img src = "/captcha.php" />
+		</fieldset>
+		<fieldset id="actions">
+			<input type="submit" id="submit" value="Регистрация">
+		</fieldset>
+			
+</form>
+	
+			</div>
+		</div>
+	</div>
+</body>
+</html>
